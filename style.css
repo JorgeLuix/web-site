@@ -53,7 +53,7 @@ html{
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .jc-btn{
     font-weight: 500;
-    padding: 12px 20px;
+    padding: 10px 20px;
     background: #efefef;
     border: none;
     border-radius: 10px;
@@ -642,8 +642,14 @@ footer{
         align-content: flex-start;
         min-height: 60vh;
     }
+    .featured-text-btn{
+        display: flex;
+        justify-content: center;
+    }
     .social_icons{
         margin-top: 2em;
+        display: flex;
+        justify-content: center;
     }
     .featured-image{
         order: 1;
@@ -684,8 +690,10 @@ footer{
         font-size: 20px;
     }
     .jc-btn {
-        padding: 10px;
+        padding: 7px;
+        font-size: 13px;
     }
+   
     .featured-text-info p {
         font-size: 0.8rem;
     }
