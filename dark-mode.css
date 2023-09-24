@@ -1,0 +1,64 @@
+
+
+body {
+    background:  #333333;
+    color:#ffffff;
+}
+.container-main {
+    color: var(--color-white);
+}
+nav {
+    background: #333333;
+}
+.nav-logo span{
+    color: var(--first-color);
+}
+.jc-btn {
+    background: #979595;
+}
+.btn-mode{
+    color: var(--third-color);
+}
+.nav-link{
+    color: var(--color-white);
+}
+.active-link{
+    color: var(--first-color);
+}
+.featured-name{
+    color: var(--color-white);
+}
+.featured-text-info p{
+    color: var(--color-white);
+}
+.icon{
+    background: var(--color-white);
+    box-shadow: 0px 2px 5px 0px rgba(243, 240, 240, 0.25);
+    cursor: pointer;
+}
+.icon:hover {
+    background: var(--third-color);
+}
+
+.top-header h1{
+    color: var(--first-color);
+}
+.about-info{
+    background: var(--color-white);
+    box-shadow: rgba(50, 50, 51, 0.25) 0px 50px 100px -20px, rgba(94, 93, 93, 0.3) 0px 30px 60px -30px;
+}
+.skills-header h3{
+    color: var(--color-white);
+}
+.input-field,
+textarea{
+    color: var(--color-white);
+}
+footer {
+    background:  #333333;
+}
+@media only screen and (max-width: 900px) {
+    .nav-menu{
+        background:  rgba(58, 58, 58, 0.7);
+    }
+}

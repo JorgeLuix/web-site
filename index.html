@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Add favicon -->
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./dark-mode.css" id="darkModeStylesheet">
+
+    <title>Portfolio | JorgeCastillo</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Jorge</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Inizio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">Chi sono</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Portfolio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contatto</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button id="downloadBtn" class="jc-btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div id="darkModeToggle">
+                <span class="btn-mode" id="darkModeIcon"><iconify-icon icon="tabler:sun-filled"></iconify-icon></span>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Jorge Castillo</span>
+                    </div>
+                    <div class="featured-name">
+                        <p><span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Nel mio portfolio troverai una selezione dei progetti su cui ho lavorato. Spero che il mio lavoro ti ispiri e ti dia una panoramica delle mie abilità come sviluppatore jr.
+                        </p>
+                        <p><strong>Grazie</strong> e buona navigazione!</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <a href="#contact" class="jc-btn blue-btn">Contattatami</a>
+                        <!-- <button class="jc-btn">Download CV <i class="uil uil-file-alt"></i></button> -->
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><a href="https://www.linkedin.com/in/jorge-castillo-tenasoa-48bb60236/" class="uil uil-linkedin-alt"></a></div>
+                        <div class="icon"><a href="#" class="uil uil-twitter"></a></div>
+                        <div class="icon"><a href="https://github.com/JorgeLuix" class="uil uil-github-alt"></a></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="image/IMG_20230903_151700.png" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scorri</p>
+                    </a>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>Chi sono...</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <p>Sono un giovane sviluppatore jr full stack appassionato di creare soluzioni innovative nella progettazione e nello sviluppo di applicazioni web moderne, utilizzando tecnologie front-end e back-end.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>Vue</span>
+                                <span>Vue Storefront</span>
+                                <span>Sass</span>
+                                <span>Nuxt.js</span>
+                                
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section id="projects" class="project-box section portfolio">
+                <div class="contenido-seccion">
+                    <div class="top-header">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div class="galeria">
+                        <div class="proyecto project-box">
+                            <img src="image/p1.png" alt="Progetto di Squadra">
+                            <div class="overlay">
+                                <h3>Progetto di Squadra</h3>
+                                <p>Vuejs - Laravel</p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                      <a href="image/p1.png" class="icon-link icon-portfolio" title="View">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon incon-portfolio" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto project-box">
+                            <img src="image/p2.png" alt="DC-Comics">
+                            <div class="overlay">
+                                <h3>DC-Comics</h3>
+                                <p>Php-Laravel-JavaScript-Scss </p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                      <a href="image/homepage.png" class="icon-link icon-portfolio" title="View">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto project-box">
+                            <img src="image/p3.png" alt="Online Game">
+                            <div class="overlay">
+                                <h3>Online Game</h3>
+                                <p>Vue-JavaScript-Scss-Html</p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                      <a href="image/p3.1.png" class="icon-link icon-portfolio" title="View">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="proyecto project-box">
+                            <img src="image/p4.png" alt="Campo Minato">
+                            <div class="overlay">
+                                <h3>Campo Minato</h3>
+                                <p>JavaScript-Css-Html</p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                    <a href="http://js-campominato-dom-1.vercel.app/" class="icon-link icon-portfolio">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="proyecto project-box">
+                            <img src="image/p5.png" alt="">
+                            <div class="overlay">
+                                <h3>Spotify-Web</h3>
+                                <p>Html-Css</p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                      <a href="image/p5.png" class="icon-link icon-portfolio" title="View">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto project-box">
+                            <img src="image/p6.png" alt="Whatsapp-Web">
+                            <div class="overlay">
+                                <h3>Whatsapp-Web</h3>
+                                <p>Html-JavaScript-Css</p>
+                                <div class="unicon">
+                                    <a class="icon icon-portfolio" href="https://github.com/" title="Github" data-ga-click="Header, go to dashboard, icon:logo">
+                                        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                      </a>
+                                      <a href="image/p6.png" class="icon-link icon-portfolio" title="View">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path stroke-linejoin="round" d="M24 41c9.941 0 18-8.322 18-14c0-5.678-8.059-14-18-14S6 21.328 6 27c0 5.672 8.059 14 18 14Z" clip-rule="evenodd"/><path stroke-linejoin="round" d="M24 33a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z"/><path stroke-linecap="round" d="m13.264 11.266l2.594 3.62m19.767-3.176l-2.595 3.62M24.009 7v6"/></g></svg>
+                                      </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Contatto</h1>
+                <span>Hai qualche proggetto in mente, contattami qui</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2> Contattami <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: Tec.jorge.29@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> +39 327 812 9137</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-control" method="post" action="https://formsubmit.co/tec.jorge.29@gmail.com" name="contactform" id="contactform">
+                            <div class="form-inputs">
+                                <input name="name" type="text" id="name" class="input-field" placeholder="Nome" autocomplete="none">
+                                <input name="email" type="text" id="email" class="input-field" placeholder="Email" autocomplete="none">
+                            </div>
+                            <div class="text-area">
+                                <textarea name="comments" id="comments" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button id="submit" type="submit" class="jc-btn send_message transition">Invia <i class="uil uil-message"></i></button>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Messaggio inviato con successo!">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Jorge Castillo .</p>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://www.linkedin.com/in/jorge-castillo-tenasoa-48bb60236/" class="uil uil-linkedin-alt"></a></div>
+                <div class="icon"><a class="uil uil-twitter"></a></div>
+                <div class="icon"><a href="https://github.com/JorgeLuix" class="uil uil-github-alt"></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;"><strong>Jorge Castillo</strong></a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
