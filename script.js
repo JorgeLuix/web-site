@@ -1,30 +1,43 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
-function myMenuFunction(){
-    let menuBtn = document.getElementById("myNavMenu");
+function myMenuFunction() {
+  let menuBtn = document.getElementById("myNavMenu");
 
-    if(menuBtn.className === "nav-menu"){
-      menuBtn.className += " responsive";
-    } else {
+  if (menuBtn.className === "nav-menu responsive") {
       menuBtn.className = "nav-menu";
-    }
+  } else {
+      menuBtn.className += " responsive";
+    
   }
+}
+
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+      let menuBtn = document.getElementById("myNavMenu");
+      menuBtn.className = "nav-menu";
+  });
+});
+
 // DarkMode
 
 const darkModeToggle = document.getElementById("darkModeToggle");
 const darkModeIcon = document.getElementById("darkModeIcon");
 const darkModeStylesheet = document.getElementById("darkModeStylesheet");
 
+darkModeStylesheet.disabled = true;
+darkModeIcon.innerHTML = '<iconify-icon icon="akar-icons:moon-fill"></iconify-icon>';
+
 darkModeToggle.addEventListener("click", () => {
     if (darkModeStylesheet.disabled) {
         darkModeStylesheet.disabled = false;
         darkModeIcon.innerHTML = '<iconify-icon icon="tabler:sun-filled"></iconify-icon>';
-       
     } else {
         darkModeStylesheet.disabled = true;
         darkModeIcon.innerHTML = '<iconify-icon icon="akar-icons:moon-fill"></iconify-icon>';
-        
     }
 });
+
 
   // Download Cv
 const downloadBtn = document.getElementById("downloadBtn");

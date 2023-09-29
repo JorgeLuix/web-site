@@ -270,7 +270,6 @@ nav{
     height: 90%;
     border: .2rem solid var(--text-color-third);
     border-radius: 50%;
-    /* object-fit: contain; */
 }
 .image .circle-spin {
     position: absolute;
@@ -309,6 +308,7 @@ nav{
    width: 150px;
    height: 50px;
    gap: 5px;
+   cursor: pointer;
    text-decoration: none;
    color: var(--text-color-second);
    background: var(--color-white);
@@ -679,6 +679,10 @@ footer{
         display: flex;
         justify-content: center;
     }
+    .scroll-btn{
+         display: none; 
+       
+      }
     .social_icons{
         margin-top: 1em;
         padding-bottom: 3em;
@@ -690,7 +694,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 8rem;
+        margin-top: 9rem;
         padding: 20px 0;
     }
     .image, .image img{
@@ -698,6 +702,7 @@ footer{
         height: 12rem;
         border: .2rem solid var(--color-white);
     }
+    
     .row{
         display: flex;
         flex-direction: column;
@@ -732,13 +737,25 @@ footer{
    .social_icons {
     padding-bottom: 2.5rem;
    }
+    .featured-image{
+    order: 1;
+    justify-content: center;
+    min-height: 150px;
+    width: 100%;
+    margin-top: 9rem;
+    padding: 20px 0;
+}
+.scroll-btn{
+   display: none;
+  
+ }
     .featured-text-info p {
         font-size: 0.8rem;
     }
     .image, .image img{
         width: 10rem;
         height: 10rem;
-        border: .2rem solid white;
+        border: .2rem solid var(--color-white);
     }
     .portfolio .galeria {
         display: flex;
